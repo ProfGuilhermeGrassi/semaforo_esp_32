@@ -20,10 +20,10 @@ function ligarVermelho(){
     document.getElementById("vermelho").classList.add("vermelho")
     document.getElementById("amarelo").classList.remove("amarelo")
     document.getElementById("verde").classList.remove("verde")
-    
+
     //Fazendo publish no tópico
     const msg = new Paho.MQTT.Message("")
-    msg.destinantionName = "senai890/semaforo/ligar/vermelho"
+    msg.destinantionName = "senai510/semaforo/liga/vermelho"
     clientWeb.send(msg)
 }
 
