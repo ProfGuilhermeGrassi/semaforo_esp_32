@@ -18,14 +18,20 @@ clientWeb.connect({
 
 function ligarVermelho(){
     document.getElementById("vermelho").classList.add("vermelho")
+    document.getElementById("amarelo").classList.remove("amarelo")
+    document.getElementById("verde").classList.remove("verde")
 }
 
 function ligarAmarelo(){
     document.getElementById("amarelo").classList.add("amarelo")
+    document.getElementById("vermelho").classList.remove("vermelho")
+    document.getElementById("verde").classList.remove("verde")
 }
 
 function ligarVerde(){
     document.getElementById("verde").classList.add("verde")
+    document.getElementById("vermelho").classList.remove("vermelho")
+    document.getElementById("amarelo").classList.remove("amarelo")
 }
 
 function ligarAutomatico(){
